@@ -35,3 +35,33 @@ h2 {
 .post p {
   margin-top: 0;
 }
+
+.post-form {
+  margin-top: 20px;
+}
+
+.post-form input,
+.post-form textarea {
+  display: flex;
+  width: 60%;
+  font-size: 18px;
+  min-height: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+#post-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  min-width: 120px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#post-form button:hover {
+  background-color: #00b330;
+}
