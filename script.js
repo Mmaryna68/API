@@ -1,6 +1,5 @@
-//Cоздаем функции добавления постов на страницу
+// Создаем HTML-разметку для одного поста
 function createPostHTML(post) {
-  // Создаем HTML-разметку для одного поста
   return `
       <div class="post">
         <h2>${post.title}</h2>
@@ -9,13 +8,13 @@ function createPostHTML(post) {
     `;
 }
 
+// Добавляем HTML-разметку поста в контейнер
 function addPostToContainer(container, postHTML) {
-  // Добавляем HTML-разметку поста в контейнер
   container.innerHTML += postHTML;
 }
 
+// Делаем GET-запрос к серверу для получения списка постов
 function fetchPosts() {
-  // Делаем GET-запрос к серверу для получения списка постов
   fetch("https://jsonplaceholder.typicode.com/posts")
     .then((response) => response.json())
     .then((posts) => {
@@ -31,6 +30,7 @@ function fetchPosts() {
     });
 }
 
+// Создаем новый пост при отправке формы
 function createPost(event) {
   event.preventDefault();
 
